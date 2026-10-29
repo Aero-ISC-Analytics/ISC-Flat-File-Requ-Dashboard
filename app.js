@@ -8,7 +8,7 @@ const templates = [
   ['XREF_SBU_FGI_RECLASS', 'EDW_AERO_ISC_XREF_SBU_FGI_RECLASS.xlsx', '6F4CE338-96D3-4679-81B5-6EB13DFF715A', 'Planning: Jessica Ruiz-Santiago / Ben Paasch', 'Yearly', 'Manual'],
   ['XREF_FSH_ALLOCATION_RATES', 'EDW_AERO_ISC_XREF_FSH_ALLOCATION_RATES.xlsx', '047AB6D0-7D51-4378-B636-35F86AE318FB', 'Planning: Brad Schneider', 'Yearly', 'Manual'],
   ['XREF_ALLOCATION_RATES', 'EDW_AERO_ISC_XREF_AMR_ALLOCATION_RATES.xlsx', '4BC4017C-98F9-48EF-ADC7-CE446C26D282', 'Finance: Lino Rivera / Amanda Picha', 'Yearly', 'Manual'],
-  ['XREF_NON_SAP_SITES', 'EDW_AERO_ISC_XREF_NON_SAP_SITES.xlsx', '2B881EC8-183C-4B39-98CE-FBC1747CCC10', 'Finance: Nolan Powell / Connor Wong', 'Monthly', 'Manual'],
+  ['XREF_NON_SAP_SITES', 'EDW_AERO_ISC_XREF_NON_SAP_SITES.xlsx', '2B881EC8-183C-4B39-98CE-FBC1747CCC10', 'Finance: David Padineant', 'Monthly', 'Manual'],
   ['XREF_AGED_WIP_TRACKER', 'EDW_AERO_ISC_XREF_AGED_WIP_TRACKER.xlsx', '61BE0FC3-5911-4056-AA77-E9C73B922DD5', 'Finance: Camryn Gray', 'Yearly', 'Manual'],
   ['XREF_IOS_DEMAND', 'EDW_AERO_XREF_ISC_GPD_DEAMND.xlsx', '23EA3043-E41A-4757-9FC2-97C517C531FA', 'Finance: Jesse Jirousek', 'Quarterly', 'Manual', true],
   ['XREF_IOS_DEMAND', 'EDW_AERO_XREF_ISC_SPEX_DEAMND.xlsx', '221D31B6-5575-4B5D-A1DA-A78B3E68F611', 'Finance: Jesse Jirousek', 'Quarterly', 'Manual', true],
