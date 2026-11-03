@@ -106,10 +106,11 @@ if (csvCallout && namingHeading) {
       finalNotesBlock.className = 'final-notes-block';
       finalNotesBlock.append(finalNotesHeading, notesList);
 
-      const filePathFigure = document.createElement('figure');
-      filePathFigure.className = 'file-path-figure';
-      filePathFigure.innerHTML = '<img src="assets/File Path.png" alt="MoveIT folder path screenshot" onerror="this.parentElement.hidden = true">';
-      finalNotesBlock.append(filePathFigure);
+      const filePathFigure = document.querySelector('#rules .instruction-image');
+      if (filePathFigure) {
+        filePathFigure.classList.add('file-path-figure');
+        finalNotesBlock.append(filePathFigure);
+      }
 
       namingBlock.append(finalNotesBlock);
     }
