@@ -35,6 +35,22 @@ const templates = [
   ['XREF_PART_COMMODITY_FAMILY_CODE', 'XREF_PART_FAMILY_CODE.xlsx', null, 'TBD', 'As needed', 'Manual', false, false, 'assets/XREF_PART_FAMILY_CODE.xlsx']
 ];
 
+const frequencyNotes = {
+  'EDW_AERO_ISC_XREF_SBU_FGI_RECLASS.xlsx': 'After 10 WD of Jan',
+  'EDW_AERO_ISC_XREF_FSH_ALLOCATION_RATES.xlsx': 'Around Dec 15',
+  'EDW_AERO_ISC_XREF_AMR_ALLOCATION_RATES.xlsx': 'January',
+  'EDW_AERO_ISC_XREF_NON_SAP_SITES.xlsx': 'By fiscal day 9 of new month',
+  'EDW_AERO_ISC_XREF_AGED_WIP_TRACKER.xlsx': 'Q1: Mar 15',
+  'EDW_AERO_XREF_ISC_GPD_DEAMND.xlsx': 'By end of wk 1 of mo. 2 of qtr',
+  'EDW_AERO_XREF_ISC_SPEX_DEAMND.xlsx': 'By end of wk 1 of mo. 2 of qtr',
+  'EDW_AERO_XREF_ISC_SERVIGISTICS_DEAMND.xlsx': 'By end of wk 1 of mo. 2 of qtr',
+  'EDW_AERO_XREF_ISC_LTB_DEAMND.xlsx': 'By end of wk 1 of mo. 2 of qtr',
+  'EDW_AERO_XREF_ISC_IOS_WAIVER.xlsx': 'Last wk of last mo. of qtr',
+  'PAYMENT_CALENDAR_AERO.xlsx': 'October',
+  'EDW_AERO_ISC_DOLPHIN_AP_HOLIDAY_CALENDAR.xlsx': 'Around Dec 15',
+  'EDW_AERO_ISC_AOP_METRIC_INVENTORY.xlsx': 'Around Dec 15'
+};
+
 const xrefTablePath = '/Distribution / CORP / EDW_GENERAL / LANDING / ISC / XREF_TABLES';
 const iosPath = '/Distribution / CORP / EDW_ITAR / LANDING / ISC / IOS';
 const table = document.querySelector('#template-table');
@@ -47,10 +63,11 @@ for (const [model, file, id, owner, frequency, type, defect, pending, externalUr
   const displayFile = model === 'XREF_ISC_IOS_WAIVER' ? 'EDW_AERO_XREF_ISC_IOS_WAIVER.csv' : file.replace(/\.xlsx$/i, '.csv');
   const link = !url ? `<span class="template-link pending">${displayFile}</span>` : `<a class="template-link${pending ? ' pending' : ''}" href="${url}" download="${displayFile}">${displayFile}</a>`;
   const typeValue = defect ? `<span class="type-with-indicator">${type}<span class="defect-dot defect-inline" aria-label="Defect report available"></span></span>` : type;
+  const frequencyValue = frequencyNotes[file] ? `${frequency}<small class="frequency-note">${frequencyNotes[file]}</small>` : frequency;
   const modelCell = renderedModels.has(model) ? '' : `<td class="data-model" rowspan="${modelCounts[model]}">${model}</td>`;
   renderedModels.add(model);
   const pathValue = model.includes('IOS') || model.includes('IOS_WAIVER') ? iosPath : xrefTablePath;
-  table.insertAdjacentHTML('beforeend', `<tr>${modelCell}<td>${link}</td><td>${owner}</td><td>${frequency}</td><td>${typeValue}</td><td class="path">${pending ? 'TBD' : pathValue}</td></tr>`);
+  table.insertAdjacentHTML('beforeend', `<tr>${modelCell}<td>${link}</td><td>${owner}</td><td>${frequencyValue}</td><td>${typeValue}</td><td class="path">${pending ? 'TBD' : pathValue}</td></tr>`);
 }
 
 const defectSection = document.querySelector('#defects');

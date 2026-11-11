@@ -28,6 +28,7 @@ h2 { font-size: clamp(34px, 4vw, 48px); } h3 { font-size: 24px; }
 #decision-log .section-shell { width: min(1180px, calc(100% - 48px)); margin-inline: auto; padding: 0; }
 #decision-log .split-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 90px; }
 #decision-log .check-list { background: #8bb0b1; }
+.frequency-note { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; line-height: 1.25; }
 .site-content { padding: 64px 0 18px; }.site-content h2 { margin-bottom: 20px; }.site-content p { max-width: 980px; font-size: 16px; }.site-content p:last-child { margin-bottom: 0; }
 .defects .section-shell { padding: 78px 0; }.defect-intro { max-width: 940px; font-size: 17px; }.attention { color: #ffb3ad; font-weight: 700; text-transform: uppercase; }.defect-list { display: grid; margin-top: 28px; border: 1px solid #ffb08a; }.defect-list span { padding: 13px 18px; color: #24170f; border-bottom: 1px solid #fff0e9; background: #ffad7a; text-align: center; font-size: 14px; }.defect-list span:last-child { border-bottom: none; }
 .contacts { padding: 52px 0 68px; }.contacts .warning { margin-top: 48px; font-size: 18px; }.contacts .warning strong:first-child { color: #e52b35; }.contacts li + li { margin-top: 9px; }
