@@ -5,7 +5,7 @@ const csvAssetPath = (file) => `assets/template-csv/${file.replace(/\.xlsx$/i, '
 
 const templates = [
   ['XREF_GL_ACCOUNT', 'EDW_AERO_ISC_XREF_GL_ACCOUNT.xlsx', 'B34B5C9E-247F-4C62-9C84-8072A5331EA5', 'Finance: Julie Ehrenreich / Lino Rivera', 'As needed', 'Manual'],
-  ['XREF_SBU_FGI_RECLASS', 'EDW_AERO_ISC_XREF_SBU_FGI_RECLASS.xlsx', '6F4CE338-96D3-4679-81B5-6EB13DFF715A', 'Cindy Qiu', 'Yearly', 'Manual'],
+  ['XREF_SBU_FGI_RECLASS', 'EDW_AERO_ISC_XREF_SBU_FGI_RECLASS.xlsx', '6F4CE338-96D3-4679-81B5-6EB13DFF715A', 'Planning: Cindy Qiu', 'Yearly', 'Manual'],
   ['XREF_FSH_ALLOCATION_RATES', 'EDW_AERO_ISC_XREF_FSH_ALLOCATION_RATES.xlsx', '047AB6D0-7D51-4378-B636-35F86AE318FB', 'Planning: Brad Schneider', 'Yearly', 'Manual'],
   ['XREF_ALLOCATION_RATES', 'EDW_AERO_ISC_XREF_AMR_ALLOCATION_RATES.xlsx', '4BC4017C-98F9-48EF-ADC7-CE446C26D282', 'Finance: Lino Rivera / Amanda Picha', 'Yearly', 'Manual'],
   ['XREF_NON_SAP_SITES', 'EDW_AERO_ISC_XREF_NON_SAP_SITES.xlsx', '2B881EC8-183C-4B39-98CE-FBC1747CCC10', 'Finance: David Padineant', 'Monthly', 'Manual'],
