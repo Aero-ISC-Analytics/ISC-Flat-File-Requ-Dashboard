@@ -39,7 +39,7 @@ const frequencyNotes = {
   'EDW_AERO_ISC_XREF_SBU_FGI_RECLASS.xlsx': 'After 10 WD of Jan',
   'EDW_AERO_ISC_XREF_FSH_ALLOCATION_RATES.xlsx': 'Around Dec 15',
   'EDW_AERO_ISC_XREF_AMR_ALLOCATION_RATES.xlsx': 'January',
-  'EDW_AERO_ISC_XREF_NON_SAP_SITES.xlsx': 'On or Before NLT Fiscal Day 9',
+  'EDW_AERO_ISC_XREF_NON_SAP_SITES.xlsx': 'NLT Fiscal Day 9',
   'EDW_AERO_ISC_XREF_AGED_WIP_TRACKER.xlsx': 'Q1: Mar 15',
   'EDW_AERO_XREF_ISC_GPD_DEAMND.xlsx': 'EOW wk 1 of mo. 2 of qtr',
   'EDW_AERO_XREF_ISC_SPEX_DEAMND.xlsx': 'EOW wk 1 of mo. 2 of qtr',
